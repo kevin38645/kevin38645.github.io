@@ -9,38 +9,38 @@
     <link rel="stylesheet" href="phaserWebStyle.css">
 
     <script>
-        var nowSquareSpot = 1
-        setInterval(next, 5000);
-        function changeSquare(num){
-            let origin = document.getElementById('square' + nowSquareSpot)
-            origin.style.backgroundColor = 'rgb(160, 72, 0)'
-            let get = document.getElementById('square' + num)
-            get.style.backgroundColor = 'white'
-            get = document.getElementById('squareImage')
-            get.src = 'public/assets/view' + num + '.png'
-            nowSquareSpot = num
-        }
-        function nextSquare(num){
-            let origin = document.getElementById('square' + nowSquareSpot)
-            origin.style.backgroundColor = 'rgb(160, 72, 0)'
-            if(num==1){
-                if(nowSquareSpot==3){
-                    nowSquareSpot=1
-                }else{
-                    nowSquareSpot++
-                }
-            }else if(num==-1){
-                if(nowSquareSpot==1){
-                    nowSquareSpot=3
-                }else{
-                    nowSquareSpot--
-                }
-            }
-            let get = document.getElementById('square' + nowSquareSpot)
-            get.style.backgroundColor = 'white'
-            get = document.getElementById('squareImage')
-            get.src = 'public/assets/view' + nowSquareSpot + '.png'
-        }
+        123r nowSquareSpot = 1
+        123tInterval(next, 5000);
+        123nction changeSquare(num){
+        123  let origin = document.getElementById('square' + nowSquareSpot)
+        123  origin.style.backgroundColor = 'rgb(160, 72, 0)'
+        123  let get = document.getElementById('square' + num)
+        123  get.style.backgroundColor = 'white'
+        123  get = document.getElementById('squareImage')
+        123  get.src = 'public/assets/view' + num + '.png'
+        123  nowSquareSpot = num
+        123
+        123nction nextSquare(num){
+        123  let origin = document.getElementById('square' + nowSquareSpot)
+        123  origin.style.backgroundColor = 'rgb(160, 72, 0)'
+        123  if(num==1){
+        123      if(nowSquareSpot==3){
+        123          nowSquareSpot=1
+        123      }else{
+        123          nowSquareSpot++
+        123      }
+        123  }else if(num==-1){
+        123      if(nowSquareSpot==1){
+        123          nowSquareSpot=3
+        123      }else{
+        123          nowSquareSpot--
+        123      }
+        123  }
+        123  let get = document.getElementById('square' + nowSquareSpot)
+        123  get.style.backgroundColor = 'white'
+        123  get = document.getElementById('squareImage')
+        123  get.src = 'public/assets/view' + nowSquareSpot + '.png'
+        123
         function next(){
             let origin = document.getElementById('square' + nowSquareSpot)
             origin.style.backgroundColor = 'rgb(160, 72, 0)'
